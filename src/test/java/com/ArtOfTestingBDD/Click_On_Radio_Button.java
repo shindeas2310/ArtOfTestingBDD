@@ -19,7 +19,8 @@ public class Click_On_Radio_Button {
 	public void i_select_the_male_radio_button() {
 	    
 		JavascriptExecutor ScrollDown = (JavascriptExecutor) driver;
-		ScrollDown.executeAsyncScript("window.scrollBy(o,300");	
+		ScrollDown.executeScript("window.scrollBy(0,300)");
+		
 		
 		WebElement ClickOnMaleRadioButton = driver.findElement(MaleRadioButton);
 		ClickOnMaleRadioButton.click();
@@ -31,7 +32,8 @@ public class Click_On_Radio_Button {
 	    
 		WebElement Male_Radio_Button = driver.findElement(MaleRadioButton);
 		boolean isSelected = Male_Radio_Button.isSelected();
-		Assert.assertEquals(isSelected, "MaleRadio Button Is Not Selected");
+		//Assert.assertEquals(isSelected, "MaleRadio Button Is Not Selected");
+		Assert.assertEquals("MaleRadio Button Is Not Selected", true, isSelected);
 		
 	}
 	

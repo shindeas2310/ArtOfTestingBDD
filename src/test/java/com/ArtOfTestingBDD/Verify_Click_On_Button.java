@@ -14,7 +14,7 @@ public class Verify_Click_On_Button {
 	public void i_click_the_button() {
 	    
 		JavascriptExecutor ScrollDown = (JavascriptExecutor) driver;
-		ScrollDown.executeScript("window.scrollBy(0,300");
+		ScrollDown.executeScript("window.scrollBy(0,300)");
 		
 		driver.findElement(By.id("idOfButton")).click();
 
